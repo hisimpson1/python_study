@@ -23,7 +23,7 @@ data = {
     "query": "기차"
 }
 
-# 이미지 검색 요청하여 다운로드
+# 이미지 검색해서 리스틀 얻어와서 다운로드
 response = requests.post(search_url, headers=headers, data=data)
 if response.status_code != 200:
     print("requests 응답 에러: ", response.json())
