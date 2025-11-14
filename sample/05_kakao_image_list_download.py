@@ -36,3 +36,14 @@ else:
         download_image(info['image_url'], filename)
 
      
+"""
+쿼리를 "장미"로 100개의 이미지를 얻어오고 있다.
+data = {
+    "query": "장미",
+    "page": 1,
+    "size": 100
+}
+
+# 이미지 검색해서 리스틀 얻어와서 다운로드
+response = requests.post(search_url, headers=headers, data=data)
+"""
